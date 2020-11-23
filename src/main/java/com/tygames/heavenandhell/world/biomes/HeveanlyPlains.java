@@ -10,8 +10,8 @@ import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.placement.IPlacementConfig;
 import net.minecraft.world.gen.placement.Placement;
 
-public class HeavenBiome extends Biome {
-    public HeavenBiome(Builder biomeBuilder) {
+public class HeveanlyPlains extends Biome {
+    public HeveanlyPlains(Builder biomeBuilder) {
         super(biomeBuilder);
         addSpawn(EntityClassification.CREATURE, new SpawnListEntry(EntityType.SHEEP, 2, 2,10));
         addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, Feature.SWAMP_HUT.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG).withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));

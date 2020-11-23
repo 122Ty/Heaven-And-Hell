@@ -2,7 +2,7 @@ package com.tygames.heavenandhell.init;
 
 
 import com.tygames.heavenandhell.HeavenandHell;
-import com.tygames.heavenandhell.world.biomes.HeavenBiome;
+import com.tygames.heavenandhell.world.biomes.HeveanlyPlains;
 import com.tygames.heavenandhell.world.biomes.HellBiome;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -14,25 +14,25 @@ import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.lwjgl.system.CallbackI;
 
 public class BiomeInit {
 
     public static final DeferredRegister<Biome> BIOMES = new DeferredRegister<>(ForgeRegistries.BIOMES, HeavenandHell.MOD_ID);
 
-    public static  final RegistryObject<Biome> HEAVEN_BIOME = BIOMES.register("heaven_biome",
-            () -> new HeavenBiome(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
+    public static  final RegistryObject<Biome> HEAVENLY_PLAINS = BIOMES.register("heaven_biome",
+            () -> new HeveanlyPlains(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
                     .waterColor(16777215).waterFogColor(16762304).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HOLY_BLOCK.get().getDefaultState(),
                             INIT.HOLY_DIRT.get().getDefaultState(), INIT.HOLY_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
+
 
     public static  final RegistryObject<Biome> HELL_BIOME = BIOMES.register("hell_biome",
             () -> new HellBiome(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
                     .waterColor(16777215).waterFogColor(16762304).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HELL_BLOCK.get().getDefaultState(),
-                            INIT.HELL_BLOCK.get().getDefaultState(), INIT.HELL_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
+                            INIT.HELL_BLOCK.get().getDefaultState(), INIT.HELL_BLOCK.get().getDefaultState())).category(Biome.Category.NETHER).downfall(0.5f).depth(0.125f).parent(null)));
 
 
     public static void registerBiome() {
-        registerBiome(HEAVEN_BIOME.get(), BiomeDictionary.Type.OVERWORLD);
+        registerBiome(HEAVENLY_PLAINS.get(), BiomeDictionary.Type.OVERWORLD);
         registerBiome(HELL_BIOME.get(), BiomeDictionary.Type.NETHER);
     }
 
