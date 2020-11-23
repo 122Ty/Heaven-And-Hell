@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "heavenandhell:block/cross", "y": 90},
+    "facing=south": { "model": "heavenandhell:block/cross", "y": 90},
+    "facing=west": { "model": "heavenandhell:block/cross", "y":  180},
+    "facing=east": { "model": "heavenandhell:block/cross", "y":  180}
+  }
+}

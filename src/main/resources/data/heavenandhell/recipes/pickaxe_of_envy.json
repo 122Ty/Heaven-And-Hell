@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " d ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "heavenandhell:sinful_dust"
+    },
+    "d":
+    {
+      "d": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:pickaxe_of_envy",
+    "count": 1
+  }
+}

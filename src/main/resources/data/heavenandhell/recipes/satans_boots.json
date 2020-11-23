@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "d d",
+    "x x"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "heavenandhell:sinful_ingot"
+    },
+    "d":
+    {
+      "item": "heavenandhell:sinful_dust"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:satans_boots",
+    "count": 1
+  }
+}

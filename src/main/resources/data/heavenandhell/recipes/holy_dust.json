@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "heavenandhell:holy_ore"
+  },
+  "result": "heavenandhell:holy_dust",
+  "experience": 0.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "dd ",
+    "dx ",
+    " x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "d":
+    {
+      "item": "heavenandhell:sinful_dust"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:axe_of_greed",
+    "count": 1
+  }
+}

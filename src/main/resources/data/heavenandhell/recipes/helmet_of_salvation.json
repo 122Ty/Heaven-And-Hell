@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "heavenandhell:holy_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:helmet_of_salvation",
+    "count": 1
+  }
+}

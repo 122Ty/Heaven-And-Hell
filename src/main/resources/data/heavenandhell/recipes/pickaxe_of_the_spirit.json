@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " d ",
+    " d "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "heavenandhell:holy_ingot"
+    },
+    "d":
+    {
+      "d": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:pickaxe_of_the_spirit",
+    "count": 1
+  }
+}

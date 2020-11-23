@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " d ",
+    " x ",
+    " x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "d":
+    {
+      "item": "heavenandhell:sinful_dust"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:shovel_of_pride",
+    "count": 1
+  }
+}

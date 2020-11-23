@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " d ",
+    " d ",
+    " x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "d":
+    {
+      "item": "heavenandhell:sinful_dust"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:sword_of_sin",
+    "count": 1
+  }
+}

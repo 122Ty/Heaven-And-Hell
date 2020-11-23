@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "heavenandhell:items/hoe_of_lust"
+  }
+}

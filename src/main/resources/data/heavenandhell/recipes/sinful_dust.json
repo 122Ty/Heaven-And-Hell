@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "heavenandhell:sinful_ore"
+  },
+  "result": "heavenandhell:sinful_dust",
+  "experience": 0.0,
+  "cookingtime": 200
+}
