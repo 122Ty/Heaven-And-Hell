@@ -46,6 +46,7 @@ public class INIT {
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);
     public static final RegistryObject<Block> HOLY_DIRT = BLOCKS.register("holy_dirt", () -> new Block(Block.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> HELL_BLOCK = BLOCKS.register("hell_block", HellBlock::new);
+    public static final RegistryObject<Block> FLESH_BLOCK = BLOCKS.register("flesh_block", () -> new Block(Block.Properties.from(Blocks.SPONGE)));
     public static final RegistryObject<Block> HOLY_ORE = BLOCKS.register("holy_ore", HolyOre::new);
     public static final RegistryObject<Block> SINFUL_ORE = BLOCKS.register("sinful_ore",SinfulOre::new);
     public static final RegistryObject<Block> CROSS = BLOCKS.register("cross", Cross::new);
@@ -56,6 +57,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_ORE_ITEM = ITEMS.register("holy_ore", () -> new BlockItemBase(HOLY_ORE.get()));
     public static final RegistryObject<Item> SINFUL_ORE_ITEM = ITEMS.register("sinful_ore", () -> new BlockItemBase(SINFUL_ORE.get()));
     public static final RegistryObject<Item> HELL_BLOCK_ITEM = ITEMS.register("hell_block", () -> new BlockItemBase(HELL_BLOCK.get()));
+    public static final RegistryObject<Item> FLESH_BLOCK_ITEM = ITEMS.register("flesh_block", () -> new BlockItemBase(FLESH_BLOCK.get()));
     public static final RegistryObject<Item> CROSS_ITEM = ITEMS.register("cross", () -> new BlockItemBase(CROSS.get()));
     public static final RegistryObject<Item> HOLY_DIRT_ITEM = ITEMS.register("holy_dirt", () -> new BlockItemBase(HOLY_DIRT.get()));
 
