@@ -44,6 +44,7 @@ public class INIT {
 
     //BLOCKS
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);
+    public static final RegistryObject<Block> HOLY_DIRT = BLOCKS.register("holy_dirt", new Block(Block.Properties.from(Blocks.DIRT)));
     public static final RegistryObject<Block> HELL_BLOCK = BLOCKS.register("hell_block", HellBlock::new);
     public static final RegistryObject<Block> HOLY_ORE = BLOCKS.register("holy_ore", HolyOre::new);
     public static final RegistryObject<Block> SINFUL_ORE = BLOCKS.register("sinful_ore",SinfulOre::new);
