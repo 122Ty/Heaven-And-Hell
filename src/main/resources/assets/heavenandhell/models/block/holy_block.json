@@ -2,6 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "top": "heavenandhell:blocks/holy_block_top",
+    "front": "heavenandhell:blocks/holy_block_side",
     "bottom": "heavenandhell:blocks/holy_block_bottom",
     "side": "heavenandhell:blocks/holy_block_side"
   }
