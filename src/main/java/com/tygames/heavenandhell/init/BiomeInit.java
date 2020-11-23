@@ -23,18 +23,18 @@ public class BiomeInit {
     public static  final RegistryObject<Biome> HEAVEN_BIOME = BIOMES.register("heaven_biome",
             () -> new HeavenBiome(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
                     .waterColor(16777215).waterFogColor(16762304).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HOLY_BLOCK.get().getDefaultState(),
-                            INIT.HOLY_BLOCK.get().getDefaultState(), INIT.HOLY_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
+                            INIT.HOLY_DIRT.get().getDefaultState(), INIT.HOLY_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
 
     public static  final RegistryObject<Biome> HELL_BIOME = BIOMES.register("hell_biome",
             () -> new HellBiome(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
-                    .waterColor(16777215).waterFogColor(16762304).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HOLY_BLOCK.get().getDefaultState(),
-                            INIT.HOLY_BLOCK.get().getDefaultState(), INIT.HOLY_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
+                    .waterColor(16777215).waterFogColor(16762304).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HELL_BLOCK.get().getDefaultState(),
+                            INIT.HELL_BLOCK.get().getDefaultState(), INIT.HELL_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
 
 
     public static void registerBiome() {
         registerBiome(HEAVEN_BIOME.get(), BiomeDictionary.Type.OVERWORLD);
+        registerBiome(HELL_BIOME.get(), BiomeDictionary.Type.NETHER);
     }
-
 
     private static void registerBiome(Biome biome, BiomeDictionary.Type... types) {
         BiomeDictionary.addTypes(biome, types);

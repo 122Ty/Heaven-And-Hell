@@ -10,7 +10,7 @@ public class HolyBlock extends Block {
     public HolyBlock() {
         super(Block.Properties.create(Material.IRON)
             .hardnessAndResistance(1200.0f, 200.0f)
-            .sound(SoundType.GLASS)
+            .sound(SoundType.GROUND)
             .harvestLevel(3)
             .harvestTool(ToolType.PICKAXE));
     }

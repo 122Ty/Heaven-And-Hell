@@ -16,8 +16,11 @@ public class ForgeEventBusSubscriber {
     public static void registerDimensions(final RegisterDimensionsEvent event) {
         if(DimensionType.byName(HeavenandHell.HEAVEN_DIM_TYPE) == null) {
             DimensionManager.registerDimension(HeavenandHell.HEAVEN_DIM_TYPE, DimensionInit.HEAVEN.get(), null, true);
-
         }
+        if(DimensionType.byName(HeavenandHell.HELL_DIM_TYPE) == null) {
+            DimensionManager.registerDimension(HeavenandHell.HELL_DIM_TYPE, DimensionInit.HELL.get(), null, true);
+        }
+
         HeavenandHell.LOGGER.info("Dimensions Registered!");
     }
 }
