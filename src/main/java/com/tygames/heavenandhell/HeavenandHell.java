@@ -3,6 +3,9 @@ package com.tygames.heavenandhell;
 import com.tygames.heavenandhell.init.BiomeInit;
 import com.tygames.heavenandhell.init.DimensionInit;
 import com.tygames.heavenandhell.init.INIT;
+import com.tygames.heavenandhell.init.ModEntityTypes;
+import com.tygames.heavenandhell.item.ModSpawnEggItem;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -34,10 +37,12 @@ public class HeavenandHell
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+
         INIT.init();
         MinecraftForge.EVENT_BUS.register(this);
         BiomeInit.BIOMES.register(modEventBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventBus);
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         
     }
 
@@ -49,6 +54,10 @@ public class HeavenandHell
     private void doClientStuff(final FMLClientSetupEvent event)
     {
 
+    }
+@SubscribeEvent
+    public static void onRegisterEntities(final RegistryEvent<EntityType<?>> event){
+        ModSpawnEggItem.initSpawnEggs();
     }
 //Makes Creative Tab
     public static final ItemGroup TAB = new ItemGroup("heavenTab") {

@@ -1,6 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/orientable",
   "textures": {
-    "all": "heavenandhell:blocks/hell_block"
+    "top": "heavenandhell:blocks/hell_block",
+    "front": "heavenandhell:blocks/hell_block_side",
+    "bottom": "heavenandhell:blocks/hell_block_bottom",
+    "side": "heavenandhell:blocks/hell_block_side"
   }
 }

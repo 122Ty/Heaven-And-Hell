@@ -32,5 +32,8 @@
   "item.heavenandhell.holy_dust": "Holy Dust",
   "item.heavenandhell.sinful_dust": "Sinful Dust",
   "item.heavenandhell.holy_ingot": "Holy Ingot",
-  "block.heavenandhell.cross": "Cross"
+  "block.heavenandhell.cross": "Cross",
+  "item.heavenandhell.vampire_spawn_egg": "Vampire Spawn Egg",
+  "block.heavenandhell.heavenly_cloud": "Heavenly Cloud",
+  "block.heavenandhell.hell_dirt": "Hellish Dirt"
 }

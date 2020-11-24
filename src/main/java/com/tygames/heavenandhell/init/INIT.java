@@ -3,13 +3,16 @@ package com.tygames.heavenandhell.init;
 import com.tygames.heavenandhell.HeavenandHell;
 import com.tygames.heavenandhell.armor.ArmorTier;
 import com.tygames.heavenandhell.blocks.*;
+import com.tygames.heavenandhell.entities.Vampire;
 import com.tygames.heavenandhell.item.ItemCreativeTab;
+import com.tygames.heavenandhell.item.ModSpawnEggItem;
 import com.tygames.heavenandhell.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.ArmorDyeRecipe;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -39,7 +42,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_DUST = ITEMS.register("holy_dust", ItemCreativeTab::new);
     public static final RegistryObject<Item> SINFUL_DUST = ITEMS.register("sinful_dust", ItemCreativeTab::new);
     public static final RegistryObject<Item> HOLY_INGOT = ITEMS.register("holy_ingot", ItemCreativeTab::new);
-
+    public static final RegistryObject<ModSpawnEggItem> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.VAMPIRE, 0xFF329F, 0xFF329F, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(16)));
 
 
     //BLOCKS
@@ -50,6 +53,8 @@ public class INIT {
     public static final RegistryObject<Block> HOLY_ORE = BLOCKS.register("holy_ore", HolyOre::new);
     public static final RegistryObject<Block> SINFUL_ORE = BLOCKS.register("sinful_ore",SinfulOre::new);
     public static final RegistryObject<Block> CROSS = BLOCKS.register("cross", Cross::new);
+    public static final RegistryObject<Block> HEAVENLY_CLOUDS = BLOCKS.register("heavenly_cloud", HeavenlyCloud::new);
+    public static final RegistryObject<Block> HELL_DIRT = BLOCKS.register("hell_dirt", HellDirt::new);
 
 
     //BLOCK ITEM
@@ -60,6 +65,8 @@ public class INIT {
     public static final RegistryObject<Item> FLESH_BLOCK_ITEM = ITEMS.register("flesh_block", () -> new BlockItemBase(FLESH_BLOCK.get()));
     public static final RegistryObject<Item> CROSS_ITEM = ITEMS.register("cross", () -> new BlockItemBase(CROSS.get()));
     public static final RegistryObject<Item> HOLY_DIRT_ITEM = ITEMS.register("holy_dirt", () -> new BlockItemBase(HOLY_DIRT.get()));
+    public static final RegistryObject<Item> HEAVENLY_CLOUD_ITEM = ITEMS.register("heavenly_cloud", () -> new BlockItemBase(HEAVENLY_CLOUDS.get()));
+    public static final RegistryObject<Item> HELL_DIRT_ITEM = ITEMS.register("hell_dirt", () -> new BlockItemBase(HELL_DIRT.get()));
 
     //TOOLS
     public static final RegistryObject<SwordItem> SWORD_OF_THE_SPIRIT = ITEMS.register("sword_of_the_spirit", () ->

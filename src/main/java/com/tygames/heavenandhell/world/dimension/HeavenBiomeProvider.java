@@ -15,10 +15,10 @@ public class HeavenBiomeProvider extends BiomeProvider {
         rand = new Random();
     }
 
-    public static final Set<Biome> biomeList = ImmutableSet.of(BiomeInit.HEAVEN_BIOME.get());
+    public static final Set<Biome> biomeList = ImmutableSet.of(BiomeInit.HEAVENLY_PLAINS.get());
 
     @Override
     public Biome getNoiseBiome(int x, int y, int z) {
-        return BiomeInit.HEAVEN_BIOME.get();
+        return BiomeInit.HEAVENLY_PLAINS.get();
     }
 }
