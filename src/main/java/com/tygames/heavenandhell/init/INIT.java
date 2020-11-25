@@ -43,7 +43,7 @@ public class INIT {
     public static final RegistryObject<Item> SINFUL_DUST = ITEMS.register("sinful_dust", ItemCreativeTab::new);
     public static final RegistryObject<Item> HOLY_INGOT = ITEMS.register("holy_ingot", ItemCreativeTab::new);
     public static final RegistryObject<ModSpawnEggItem> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.VAMPIRE, 0xFF329F, 0xFF329F, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(16)));
-
+   
 
     //BLOCKS
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);

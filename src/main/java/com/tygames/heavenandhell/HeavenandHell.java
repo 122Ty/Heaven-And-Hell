@@ -1,9 +1,6 @@
 package com.tygames.heavenandhell;
 
-import com.tygames.heavenandhell.init.BiomeInit;
-import com.tygames.heavenandhell.init.DimensionInit;
-import com.tygames.heavenandhell.init.INIT;
-import com.tygames.heavenandhell.init.ModEntityTypes;
+import com.tygames.heavenandhell.init.*;
 import com.tygames.heavenandhell.item.ModSpawnEggItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.ItemGroup;
@@ -43,8 +40,7 @@ public class HeavenandHell
         BiomeInit.BIOMES.register(modEventBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
-        
-    }
+        }
 
     private void setup(final FMLCommonSetupEvent event)
     {
