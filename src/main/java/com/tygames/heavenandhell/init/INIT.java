@@ -12,6 +12,8 @@ import net.minecraft.block.Blocks;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.ArmorDyeRecipe;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.SoundEvents;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
@@ -108,6 +110,23 @@ public class INIT {
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<ArmorItem> SATANS_BOOTS = ITEMS.register("satans_boots", () ->
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> ANGELIC_HELMET = ITEMS.register("angelic_helmet", () ->
+            new ArmorItem(ArmorTier.ANGELIC, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> ANGELIC_CHESTPLATE = ITEMS.register("angelic_chestplate", () ->
+            new ArmorItem(ArmorTier.ANGELIC, EquipmentSlotType.CHEST, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> ANGELIC_LEGGINGS = ITEMS.register("angelic_leggings", () ->
+            new ArmorItem(ArmorTier.ANGELIC, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> ANGELIC_BOOTS = ITEMS.register("angelic_boots", () ->
+            new ArmorItem(ArmorTier.ANGELIC, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> DEMONIC_HELMET = ITEMS.register("demonic_helmet", () ->
+            new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> DEMONIC_CHESTPLATE = ITEMS.register("demonic_chestplate", () ->
+            new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.CHEST, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> DEMONIC_LEGGINGS = ITEMS.register("demonic_leggings", () ->
+            new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> DEMONIC_BOOTS = ITEMS.register("demonic_boots", () ->
+            new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
+
 
 
 }
