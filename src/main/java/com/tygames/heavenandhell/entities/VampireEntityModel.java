@@ -6,25 +6,29 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 
 
+
 public class VampireEntityModel<T extends Vampire> extends EntityModel<T>{
-    private final ModelRenderer body;
+    private final ModelRenderer bone;
 
     public VampireEntityModel() {
         textureWidth = 64;
         textureHeight = 64;
 
-        body = new ModelRenderer(this);
-        body.setRotationPoint(0.0F, 24.0F, 0.0F);
-        body.setTextureOffset(44, 18).addBox(-4.0F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-        body.setTextureOffset(44, 18).addBox(0.0F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
-        body.setTextureOffset(0, 0).addBox(-4.0F, -34.0F, -4.0F, 8.0F, 10.0F, 8.0F, 0.0F, false);
-        body.setTextureOffset(24, 0).addBox(-1.0F, -27.0F, -6.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
-        body.setTextureOffset(16, 20).addBox(-4.0F, -24.0F, -3.0F, 8.0F, 12.0F, 6.0F, 0.0F, false);
-        body.setTextureOffset(40, 38).addBox(-4.0F, -20.0F, -2.0F, 8.0F, 4.0F, 4.0F, 0.0F, false);
-        body.setTextureOffset(0, 26).addBox(-8.0F, -24.0F, -2.0F, 4.0F, 8.0F, 4.0F, 0.0F, false);
-        body.setTextureOffset(0, 26).addBox(4.0F, -24.0F, -2.0F, 4.0F, 8.0F, 4.0F, 0.0F, false);
-        body.setTextureOffset(16, 14).addBox(-4.0F, -24.0F, -3.0F, 8.0F, 18.0F, 6.0F, 0.5F, false);
-        body.setTextureOffset(0, 0).addBox(-4.0F, -34.0F, -4.0F, 8.0F, 10.0F, 8.0F, 0.25F, false);
+        bone = new ModelRenderer(this);
+        bone.setRotationPoint(0.0F, 24.0F, 0.0F);
+        bone.setTextureOffset(0,0).addBox(16, 0.0f, -12.0f, -2.0f, 4,12,4,0.0f,0.0f);
+        bone.setTextureOffset(0,0).addBox(14, 0.0f, -12.0f, -2.0f, 4,12,4,0.25f,0.0f);
+        bone.setTextureOffset(32,32).addBox(48, 4.0f, -24.0f, -2.0f, 4,12,4,0.0f,0.0f);
+        bone.setTextureOffset(31,31).addBox(48, 4.0f, -24.0f, -2.0f, 4,12,4,0.25f,0.0f);
+        bone.setTextureOffset(0,0).addBox(16, -4.0f, -12.0f, -2.0f, 4,12,4,0.0f,0.0f);
+        bone.setTextureOffset(0,0).addBox(15, -4.0f, -12.0f, -2.0f, 4,12,4,0.25f,0.0f);
+        bone.setTextureOffset(32,32).addBox(48, -8.0f, -24.0f, -2.0f, 4,12,4,0.0f,0.0f);
+        bone.setTextureOffset(32,32).addBox(48, -8.0f, -24.0f, -2.0f, 4,12,4,0.25f,0.0f);
+        bone.setTextureOffset(16,16).addBox(16, -4.0f, -24.0f, -2.0f, 8,12,4,0.0f,0.0f);
+        bone.setTextureOffset(16,16).addBox(16, -4.0f, -24.0f, -2.0f, 8,12,4,0.25f,0.0f);
+        bone.setTextureOffset(0,0).addBox(0, -4.0f, -32.0f, -4.0f, 8,8,8,0.25f,0.0f);
+        bone.setTextureOffset(0,0).addBox(0, -4.0f, -32.0f, -4.0f, 8,8,8,0.0f,0.0f);
+
     }
 
     @Override
@@ -34,7 +38,7 @@ public class VampireEntityModel<T extends Vampire> extends EntityModel<T>{
 
     @Override
     public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
-        body.render(matrixStackIn, bufferIn,packedLightIn,packedOverlayIn, red, green, blue, alpha);
+        bone.render(matrixStackIn, bufferIn,packedLightIn,packedOverlayIn, red, green, blue, alpha);
     }
 
     public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -46,7 +50,7 @@ public class VampireEntityModel<T extends Vampire> extends EntityModel<T>{
     public void setLivingAnimations(T entityIn, float limbSwing, float limbSwingAmount, float partialTick) {
         super.setLivingAnimations(entityIn, limbSwing, limbSwingAmount, partialTick);
     }
-    public ModelRenderer getBody(){
-        return body;
+    public ModelRenderer getBone(){
+        return bone;
     }
 }
