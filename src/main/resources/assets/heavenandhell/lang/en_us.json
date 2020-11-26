@@ -35,5 +35,7 @@
   "block.heavenandhell.cross": "Cross",
   "item.heavenandhell.vampire_spawn_egg": "Vampire Spawn Egg",
   "block.heavenandhell.heavenly_cloud": "Heavenly Cloud",
-  "block.heavenandhell.hell_dirt": "Hellish Dirt"
+  "block.heavenandhell.hell_dirt": "Hellish Dirt",
+  "item.heavenandhell.angelic_grace": "Angelic Grace",
+  "item.heavenandhell.demonic_soul": "Demonic Soul"
 }
