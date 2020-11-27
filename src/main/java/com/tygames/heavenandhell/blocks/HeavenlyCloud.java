@@ -12,6 +12,7 @@ public class HeavenlyCloud extends Block {
                 .hardnessAndResistance(1200.0f, 200.0f)
                 .sound(SoundType.GLASS)
                 .harvestLevel(3)
-                .harvestTool(ToolType.PICKAXE));
+                .harvestTool(ToolType.PICKAXE)
+                .notSolid());
     }
 }
