@@ -2,6 +2,8 @@ package com.tygames.heavenandhell;
 
 import com.tygames.heavenandhell.init.*;
 import com.tygames.heavenandhell.item.ModSpawnEggItem;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -49,7 +51,7 @@ public class HeavenandHell
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
-
+        RenderTypeLookup.setRenderLayer(INIT.HEAVENLY_CLOUD.get(), RenderType.getTranslucent());
     }
 @SubscribeEvent
     public static void onRegisterEntities(final RegistryEvent<EntityType<?>> event){
