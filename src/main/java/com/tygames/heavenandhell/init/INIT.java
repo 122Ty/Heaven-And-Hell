@@ -109,6 +109,7 @@ public class INIT {
             new HoeItem(ModItemTier.SINFUL, 0f, new Item.Properties().group(HeavenandHell.TAB)));
 
 
+
     //ARMOR
     public static final RegistryObject<ArmorItem> HELMET_OF_SALVATION = ITEMS.register("helmet_of_salvation", () ->
             new ArmorItem(ArmorTier.HOLY, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));

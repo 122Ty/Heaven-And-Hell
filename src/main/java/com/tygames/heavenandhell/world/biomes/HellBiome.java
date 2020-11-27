@@ -1,7 +1,10 @@
 package com.tygames.heavenandhell.world.biomes;
 
+import com.tygames.heavenandhell.entities.Vampire;
+import com.tygames.heavenandhell.init.ModEntityTypes;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
