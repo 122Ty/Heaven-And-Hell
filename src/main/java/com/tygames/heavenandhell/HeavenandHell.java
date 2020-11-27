@@ -28,14 +28,14 @@ public class HeavenandHell
 
 
     public HeavenandHell() {
+        INIT.init();
+
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-
-        INIT.init();
         MinecraftForge.EVENT_BUS.register(this);
         BiomeInit.BIOMES.register(modEventBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventBus);
