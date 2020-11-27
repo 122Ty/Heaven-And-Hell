@@ -14,7 +14,7 @@
     },
     "k":
     {
-      "item": "heavenandhell:breastplate_of_righteousness"
+      "item": "heavenandhell:helmet_of_salvation"
     },
     "x":
     {
@@ -23,7 +23,7 @@
   },
   "result":
   {
-    "item": "heavenandhell:angelic_chestplate",
+    "item": "heavenandhell:angelic_helmet",
     "count": 1
   }
 }

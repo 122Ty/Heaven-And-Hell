@@ -14,7 +14,7 @@
     },
     "k":
     {
-      "item": "heavenandhell:breastplate_of_righteousness"
+      "item": "heavenandhell:belt_of_truth"
     },
     "x":
     {
@@ -23,7 +23,7 @@
   },
   "result":
   {
-    "item": "heavenandhell:angelic_chestplate",
+    "item": "heavenandhell:angelic_leggings",
     "count": 1
   }
 }

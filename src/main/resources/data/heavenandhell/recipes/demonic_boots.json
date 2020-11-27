@@ -10,20 +10,20 @@
   {
     "y":
     {
-      "item": "heavenandhell:holy_ingot"
+      "item": "heavenandhell:sinful_ingot"
     },
     "k":
     {
-      "item": "heavenandhell:breastplate_of_righteousness"
+      "item": "heavenandhell:satans_boots"
     },
     "x":
     {
-      "item": "heavenandhell:angelic_grace"
+      "item": "heavenandhell:demonic_soul"
     }
   },
   "result":
   {
-    "item": "heavenandhell:angelic_chestplate",
+    "item": "heavenandhell:demonic_boots",
     "count": 1
   }
 }
