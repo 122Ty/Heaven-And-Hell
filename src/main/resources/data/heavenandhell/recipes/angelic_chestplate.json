@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "yxy",
+    "xkx",
+    "yxy"
+  ],
+  "key":
+  {
+    "y":
+    {
+      "item": "heavenandhell:holy_ingot"
+    },
+    "k":
+    {
+      "item": "heavenandhell:breastplate_of_righteousness"
+    },
+    "x":
+    {
+      "item": "heavenandhell:angelic_grace"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:breastplate_of_righteousness",
+    "count": 1
+  }
+}

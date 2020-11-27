@@ -6,51 +6,82 @@ import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 
 
+    public class VampireEntityModel<T extends Vampire> extends EntityModel<T> {
+        private final ModelRenderer bone;
+        private final ModelRenderer Head;
+        private final ModelRenderer Body;
+        private final ModelRenderer RightArm;
+        private final ModelRenderer LeftArm;
+        private final ModelRenderer RightLeg;
+        private final ModelRenderer LeftLeg;
 
-public class VampireEntityModel<T extends Vampire> extends EntityModel<T>{
-    private final ModelRenderer bone;
+        public VampireEntityModel() {
+            textureWidth = 64;
+            textureHeight = 64;
 
-    public VampireEntityModel() {
-        textureWidth = 64;
-        textureHeight = 64;
+            bone = new ModelRenderer(this);
+            bone.setRotationPoint(0.0F, 24.0F, 0.0F);
+            bone.setTextureOffset(0, 0).addBox(-4.0F, -32.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.0F, false);
+            bone.setTextureOffset(32, 0).addBox(-4.0F, -32.0F, -4.0F, 8.0F, 8.0F, 8.0F, 0.5F, false);
+            bone.setTextureOffset(16, 16).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.0F, false);
+            bone.setTextureOffset(16, 32).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, 0.25F, false);
+            bone.setTextureOffset(40, 16).addBox(-8.0F, -24.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+            bone.setTextureOffset(40, 32).addBox(-8.0F, -24.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
+            bone.setTextureOffset(32, 48).addBox(4.0F, -24.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+            bone.setTextureOffset(48, 48).addBox(4.0F, -24.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
+            bone.setTextureOffset(0, 16).addBox(-3.9F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+            bone.setTextureOffset(0, 32).addBox(-3.9F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
+            bone.setTextureOffset(16, 48).addBox(-0.1F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.0F, false);
+            bone.setTextureOffset(0, 48).addBox(-0.1F, -12.0F, -2.0F, 4.0F, 12.0F, 4.0F, 0.25F, false);
 
-        bone = new ModelRenderer(this);
-        bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-        bone.setTextureOffset(0,0).addBox(16, 0.0f, -12.0f, -2.0f, 4,12,4,0.0f,0.0f);
-        bone.setTextureOffset(0,0).addBox(14, 0.0f, -12.0f, -2.0f, 4,12,4,0.25f,0.0f);
-        bone.setTextureOffset(32,32).addBox(48, 4.0f, -24.0f, -2.0f, 4,12,4,0.0f,0.0f);
-        bone.setTextureOffset(31,31).addBox(48, 4.0f, -24.0f, -2.0f, 4,12,4,0.25f,0.0f);
-        bone.setTextureOffset(0,0).addBox(16, -4.0f, -12.0f, -2.0f, 4,12,4,0.0f,0.0f);
-        bone.setTextureOffset(0,0).addBox(15, -4.0f, -12.0f, -2.0f, 4,12,4,0.25f,0.0f);
-        bone.setTextureOffset(32,32).addBox(48, -8.0f, -24.0f, -2.0f, 4,12,4,0.0f,0.0f);
-        bone.setTextureOffset(32,32).addBox(48, -8.0f, -24.0f, -2.0f, 4,12,4,0.25f,0.0f);
-        bone.setTextureOffset(16,16).addBox(16, -4.0f, -24.0f, -2.0f, 8,12,4,0.0f,0.0f);
-        bone.setTextureOffset(16,16).addBox(16, -4.0f, -24.0f, -2.0f, 8,12,4,0.25f,0.0f);
-        bone.setTextureOffset(0,0).addBox(0, -4.0f, -32.0f, -4.0f, 8,8,8,0.25f,0.0f);
-        bone.setTextureOffset(0,0).addBox(0, -4.0f, -32.0f, -4.0f, 8,8,8,0.0f,0.0f);
+            Head = new ModelRenderer(this);
+            Head.setRotationPoint(0.0F, 0.0F, 0.0F);
+            setRotationAngle(Head, -0.1047F, 0.0873F, 0.0F);
 
+
+            Body = new ModelRenderer(this);
+            Body.setRotationPoint(0.0F, 0.0F, 0.0F);
+
+
+            RightArm = new ModelRenderer(this);
+            RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+            setRotationAngle(RightArm, -0.1745F, 0.0F, 0.0F);
+
+
+            LeftArm = new ModelRenderer(this);
+            LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+            setRotationAngle(LeftArm, 0.2094F, 0.0F, 0.0F);
+
+
+            RightLeg = new ModelRenderer(this);
+            RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+            setRotationAngle(RightLeg, 0.192F, 0.0F, 0.0349F);
+
+
+            LeftLeg = new ModelRenderer(this);
+            LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+            setRotationAngle(LeftLeg, -0.1745F, 0.0F, -0.0349F);
+
+        }
+
+        @Override
+        public void setRotationAngles(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        }
+
+        @Override
+        public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
+            bone.render(matrixStack, buffer, packedLight, packedOverlay);
+            Head.render(matrixStack, buffer, packedLight, packedOverlay);
+            Body.render(matrixStack, buffer, packedLight, packedOverlay);
+            RightArm.render(matrixStack, buffer, packedLight, packedOverlay);
+            LeftArm.render(matrixStack, buffer, packedLight, packedOverlay);
+            RightLeg.render(matrixStack, buffer, packedLight, packedOverlay);
+            LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay);
+        }
+
+        public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+            modelRenderer.rotateAngleX = x;
+            modelRenderer.rotateAngleY = y;
+            modelRenderer.rotateAngleZ = z;
+        }
     }
-
-    @Override
-    public void setRotationAngles(T entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
-    }
-
-    @Override
-    public void render(MatrixStack matrixStackIn, IVertexBuilder bufferIn, int packedLightIn, int packedOverlayIn, float red, float green, float blue, float alpha) {
-        bone.render(matrixStackIn, bufferIn,packedLightIn,packedOverlayIn, red, green, blue, alpha);
-    }
-
-    public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
-        modelRenderer.rotateAngleX = x;
-        modelRenderer.rotateAngleY = y;
-        modelRenderer.rotateAngleZ = z;
-    }
-    @Override
-    public void setLivingAnimations(T entityIn, float limbSwing, float limbSwingAmount, float partialTick) {
-        super.setLivingAnimations(entityIn, limbSwing, limbSwingAmount, partialTick);
-    }
-    public ModelRenderer getBone(){
-        return bone;
-    }
-}
