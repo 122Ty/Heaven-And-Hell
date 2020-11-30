@@ -18,4 +18,3 @@ public class VampireEntityRenderer extends MobRenderer<Vampire, VampireEntityMod
         return TEXTURE;
     }
 }
-

@@ -60,7 +60,8 @@ public class INIT {
     public static final RegistryObject<Item> DEMONIC_SOUL = ITEMS.register("demonic_soul", ItemCreativeTab::new);
     public static final RegistryObject<ModSpawnEggItem> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.VAMPIRE, 0xFF329F, 0xFF329F, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(16)));
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
-
+    public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
+    public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
 
     //BLOCKS
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);
@@ -85,6 +86,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_DIRT_ITEM = ITEMS.register("holy_dirt", () -> new BlockItemBase(HOLY_DIRT.get()));
     public static final RegistryObject<Item> HEAVENLY_CLOUD_ITEM = ITEMS.register("heavenly_cloud", () -> new BlockItemBase(HEAVENLY_CLOUD.get()));
     public static final RegistryObject<Item> HELL_DIRT_ITEM = ITEMS.register("hell_dirt", () -> new BlockItemBase(HELL_DIRT.get()));
+
 
     //TOOLS
     public static final RegistryObject<SwordItem> SWORD_OF_THE_SPIRIT = ITEMS.register("sword_of_the_spirit", () ->
@@ -147,5 +149,6 @@ public class INIT {
     //FLUID
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", () -> new ForgeFlowingFluid.Source(FluidProperties.BLOOD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID_FLOWING = FLUIDS.register("blood_fluid_flowing", () -> new ForgeFlowingFluid.Flowing(FluidProperties.BLOOD_FLUID_PROPERTIES));
+
 }
 
