@@ -121,13 +121,13 @@ public class INIT {
             new ArmorItem(ArmorTier.HOLY, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<ArmorItem> SHOES_OF_PEACE = ITEMS.register("shoes_of_peace", () ->
             new ArmorItem(ArmorTier.HOLY, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
-    public static final RegistryObject<ArmorItem> SATANS_HELM = ITEMS.register("satans_helm", () ->
+    public static final RegistryObject<ArmorItem> SINFUL_HELMET = ITEMS.register("sinful_helmet", () ->
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));
-    public static final RegistryObject<ArmorItem> SATANS_BREASTPLATE = ITEMS.register("satans_breastplate", () ->
+    public static final RegistryObject<ArmorItem> SINFUL_BREASTPLATE = ITEMS.register("sinful_chestplate", () ->
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.CHEST, new Item.Properties().group(HeavenandHell.TAB)));
-    public static final RegistryObject<ArmorItem> SATANS_LEGGINGS = ITEMS.register("satans_leggings", () ->
+    public static final RegistryObject<ArmorItem> SINFUL_LEGGINGS = ITEMS.register("satans_leggings", () ->
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
-    public static final RegistryObject<ArmorItem> SATANS_BOOTS = ITEMS.register("satans_boots", () ->
+    public static final RegistryObject<ArmorItem> SINFUL_BOOTS = ITEMS.register("satans_boots", () ->
             new ArmorItem(ArmorTier.SINFUL, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<ArmorItem> ANGELIC_HELMET = ITEMS.register("angelic_helmet", () ->
             new ArmorItem(ArmorTier.ANGELIC, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));
