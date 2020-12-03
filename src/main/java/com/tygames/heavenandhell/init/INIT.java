@@ -8,24 +8,14 @@ import com.tygames.heavenandhell.fluid.FluidProperties;
 import com.tygames.heavenandhell.item.ItemCreativeTab;
 import com.tygames.heavenandhell.item.ModSpawnEggItem;
 import com.tygames.heavenandhell.tools.ModItemTier;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerPotBlock;
-import net.minecraft.block.FlowingFluidBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
-import net.minecraft.item.crafting.ArmorDyeRecipe;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvents;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -48,7 +38,7 @@ public class INIT {
 
     //ITEMS
     public static final RegistryObject<Item> HOLY_BIBLE = ITEMS.register("holy_bible", ItemCreativeTab::new);
-    public static final RegistryObject<Item> HOLY_WATER = ITEMS.register("holy_water", ItemCreativeTab::new);
+    // public static final RegistryObject<Item> HOLY_WATER = ITEMS.register("holy_water", ItemCreativeTab::new);
     public static final RegistryObject<Item> SHIELD_OF_FAITH = ITEMS.register("shield_of_faith", ItemCreativeTab::new);
     public static final RegistryObject<Item> HEAVEN_AND_HELL_GUIDE = ITEMS.register("heaven_and_hell_guide", ItemCreativeTab::new);
     public static final RegistryObject<Item> SHIELD_OF_WRATH = ITEMS.register("shield_of_wrath", ItemCreativeTab::new);
@@ -59,7 +49,8 @@ public class INIT {
     public static final RegistryObject<Item> ANGELIC_GRACE = ITEMS.register("angelic_grace", ItemCreativeTab::new);
     public static final RegistryObject<Item> DEMONIC_SOUL = ITEMS.register("demonic_soul", ItemCreativeTab::new);
     public static final RegistryObject<ModSpawnEggItem> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.VAMPIRE, 0xFF329F, 0xFF329F, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(16)));
-    // public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
+    public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
+    public static final RegistryObject<BucketItem> HOLY_WATER_BUCKET = ITEMS.register("holy_water_bucket", () -> new BucketItem(INIT.HOLY_WATER, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
     public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
 
@@ -74,7 +65,10 @@ public class INIT {
     public static final RegistryObject<Block> HEAVENLY_CLOUD = BLOCKS.register("heavenly_cloud", HeavenlyCloud::new);
     public static final RegistryObject<Block> HELL_DIRT = BLOCKS.register("hell_dirt", HellDirt::new);
     public static final RegistryObject<FlowingFluidBlock> BLOOD_FLUID_BLOCK = BLOCKS.register("blood_fluid_block", () -> new FlowingFluidBlock(INIT.BLOOD_FLUID, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
+    public static final RegistryObject<FlowingFluidBlock> HOLY_WATER_BLOCK = BLOCKS.register("holy_water_block", () -> new FlowingFluidBlock(INIT.HOLY_WATER, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
     public static final RegistryObject<Block> KILLERPLAYZ_BLOCK = BLOCKS.register("killerplayz_block", KillerPlayzBlock::new);
+    public static final RegistryObject<Block> HOLY_CAULDRON = BLOCKS.register("holy_cauldron", HolyCauldronBlock::new);
+    public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
 
 
     //BLOCK ITEM
@@ -88,6 +82,8 @@ public class INIT {
     public static final RegistryObject<Item> HEAVENLY_CLOUD_ITEM = ITEMS.register("heavenly_cloud", () -> new BlockItemBase(HEAVENLY_CLOUD.get()));
     public static final RegistryObject<Item> HELL_DIRT_ITEM = ITEMS.register("hell_dirt", () -> new BlockItemBase(HELL_DIRT.get()));
     public static final RegistryObject<Item> KILLERPLAYZ_BLOCK_ITEM = ITEMS.register("killerplayz_block", () -> new BlockItemBase(KILLERPLAYZ_BLOCK.get()));
+    public static final RegistryObject<Item> HOLY_CAULDRON_ITEM = ITEMS.register("holy_cauldron", () -> new BlockItemBase(HOLY_CAULDRON.get()));
+    public static final RegistryObject<Item> BLOOD_CAULDRON_ITEM = ITEMS.register("blood_cauldron", () -> new BlockItemBase(BLOOD_CAULDRON.get()));
 
 
     //TOOLS
@@ -152,6 +148,7 @@ public class INIT {
     //FLUID
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", () -> new ForgeFlowingFluid.Source(FluidProperties.BLOOD_FLUID_PROPERTIES));
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID_FLOWING = FLUIDS.register("blood_fluid_flowing", () -> new ForgeFlowingFluid.Flowing(FluidProperties.BLOOD_FLUID_PROPERTIES));
-
+    public static final RegistryObject<FlowingFluid> HOLY_WATER = FLUIDS.register("holy_water", () -> new ForgeFlowingFluid.Source(FluidProperties.HOLY_WATER_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HOLY_WATER_FLOWING = FLUIDS.register("holy_water_flowing", () -> new ForgeFlowingFluid.Flowing(FluidProperties.HOLY_WATER_PROPERTIES));
 }
 

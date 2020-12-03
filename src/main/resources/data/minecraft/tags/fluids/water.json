@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "heavenandhell:blood_fluid_flowing",
-    "heavenandhell:blood_fluid"
+    "heavenandhell:blood_fluid",
+    "heavenandhell:holy_water",
+    "heavenandhell:holy_water_flowing"
   ]
 }
