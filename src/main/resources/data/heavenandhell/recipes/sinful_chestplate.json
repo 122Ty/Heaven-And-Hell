@@ -2,8 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "dxd",
-    "x x"
+    "x x",
+    "xxx",
+    "ddd"
   ],
   "key":
   {
@@ -18,7 +19,7 @@
   },
   "result":
   {
-    "item": "heavenandhell:satans_helm",
+    "item": "heavenandhell:satans_chestplate",
     "count": 1
   }
 }

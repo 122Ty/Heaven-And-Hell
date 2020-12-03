@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "ddd",
-    "x x",
+    "dxd",
     "x x"
   ],
   "key":
@@ -19,7 +18,7 @@
   },
   "result":
   {
-    "item": "heavenandhell:satans_leggings",
+    "item": "heavenandhell:sinful_helmet",
     "count": 1
   }
 }
