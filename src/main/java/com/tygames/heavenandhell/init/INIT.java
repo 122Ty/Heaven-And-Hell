@@ -59,7 +59,7 @@ public class INIT {
     public static final RegistryObject<Item> ANGELIC_GRACE = ITEMS.register("angelic_grace", ItemCreativeTab::new);
     public static final RegistryObject<Item> DEMONIC_SOUL = ITEMS.register("demonic_soul", ItemCreativeTab::new);
     public static final RegistryObject<ModSpawnEggItem> VAMPIRE_SPAWN_EGG = ITEMS.register("vampire_spawn_egg", () -> new ModSpawnEggItem(ModEntityTypes.VAMPIRE, 0xFF329F, 0xFF329F, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(16)));
-    public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
+    // public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
     public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
 
