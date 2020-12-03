@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "heavenandhell:blocks/killerplayz_block_top",
+    "front": "heavenandhell:blocks/killerplayz_block_side",
+    "bottom": "heavenandhell:blocks/killerplayz_block_top",
+    "side": "heavenandhell:blocks/killerplayz_block_side"
+  }
+}

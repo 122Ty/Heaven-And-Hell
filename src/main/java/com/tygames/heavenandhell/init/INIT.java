@@ -73,6 +73,7 @@ public class INIT {
     public static final RegistryObject<Block> HEAVENLY_CLOUD = BLOCKS.register("heavenly_cloud", HeavenlyCloud::new);
     public static final RegistryObject<Block> HELL_DIRT = BLOCKS.register("hell_dirt", HellDirt::new);
     public static final RegistryObject<FlowingFluidBlock> BLOOD_FLUID_BLOCK = BLOCKS.register("blood_fluid_block", () -> new FlowingFluidBlock(INIT.BLOOD_FLUID, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
+    public static final RegistryObject<Block> KILLERPLAYZ_BLOCK = BLOCKS.register("killerplayz_block", KillerPlayzBlock::new);
 
 
     //BLOCK ITEM
@@ -85,6 +86,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_DIRT_ITEM = ITEMS.register("holy_dirt", () -> new BlockItemBase(HOLY_DIRT.get()));
     public static final RegistryObject<Item> HEAVENLY_CLOUD_ITEM = ITEMS.register("heavenly_cloud", () -> new BlockItemBase(HEAVENLY_CLOUD.get()));
     public static final RegistryObject<Item> HELL_DIRT_ITEM = ITEMS.register("hell_dirt", () -> new BlockItemBase(HELL_DIRT.get()));
+    public static final RegistryObject<Item> KILLERPLAYZ_BLOCK_ITEM = ITEMS.register("killerplayz_block", () -> new BlockItemBase(KILLERPLAYZ_BLOCK.get()));
 
     //TOOLS
     public static final RegistryObject<SwordItem> SWORD_OF_THE_SPIRIT = ITEMS.register("sword_of_the_spirit", () ->
