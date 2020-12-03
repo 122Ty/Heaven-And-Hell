@@ -111,7 +111,8 @@ public class INIT {
             new HoeItem(ModItemTier.HOLY,0f, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<HoeItem> HOE_OF_LUST= ITEMS.register("hoe_of_lust", () ->
             new HoeItem(ModItemTier.SINFUL, 0f, new Item.Properties().group(HeavenandHell.TAB)));
-
+    public static final RegistryObject<SwordItem> JAGGED_STICK = ITEMS.register("jagged_stick", () ->
+            new SwordItem(ModItemTier.MONSTER, 1, -2.4f, new Item.Properties().group(HeavenandHell.TAB)));
 
 
     //ARMOR
