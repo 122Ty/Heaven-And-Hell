@@ -27,7 +27,7 @@ public class BiomeInit {
 
     public static  final RegistryObject<Biome> HELL_BIOME = BIOMES.register("hell_biome",
             () -> new HellBiome(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
-                    .waterColor(16727059).waterFogColor(16722195).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HELL_BLOCK.get().getDefaultState(),
+                    .waterColor(16727059).waterFogColor(16722195).surfaceBuilder(SurfaceBuilder.NETHER, new SurfaceBuilderConfig(INIT.HELL_BLOCK.get().getDefaultState(),
                             INIT.HELL_DIRT.get().getDefaultState(), INIT.HELL_BLOCK.get().getDefaultState())).category(Biome.Category.NETHER).downfall(0.5f).depth(0.125f).parent(null)));
 
 
