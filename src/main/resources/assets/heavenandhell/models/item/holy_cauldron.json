@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "heavenandhell:items/holy_cauldron"
+  }
+}

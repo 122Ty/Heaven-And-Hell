@@ -49,5 +49,8 @@
   "item.heavenandhell.demonic_soul": "Demonic Soul",
   "item.heavenandhell.blood_bucket": "Bucket of Blood",
   "item.heavenandhell.angel_wings": "Angel Wings",
-  "item.heavenandhell.jagged_stick": "Jagged Stick"
+  "item.heavenandhell.jagged_stick": "Jagged Stick",
+  "block.heavenandhell.holy_cauldron": "Holy Cauldron",
+  "block.heavenandhell.blood_cauldron": "Blood Cauldron",
+  "item.heavenandhell.holy_water_bucket": "Bucket of Holy Water"
 }
