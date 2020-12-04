@@ -38,7 +38,7 @@ public class INIT {
 
     //ITEMS
     public static final RegistryObject<Item> HOLY_BIBLE = ITEMS.register("holy_bible", ItemCreativeTab::new);
-    // public static final RegistryObject<Item> HOLY_WATER = ITEMS.register("holy_water", ItemCreativeTab::new);
+    public static final RegistryObject<Item> HOLY_WATER_BOTTLE = ITEMS.register("holy_water_bottle", ItemCreativeTab::new);
     public static final RegistryObject<Item> SHIELD_OF_FAITH = ITEMS.register("shield_of_faith", ItemCreativeTab::new);
     public static final RegistryObject<Item> HEAVEN_AND_HELL_GUIDE = ITEMS.register("heaven_and_hell_guide", ItemCreativeTab::new);
     public static final RegistryObject<Item> SHIELD_OF_WRATH = ITEMS.register("shield_of_wrath", ItemCreativeTab::new);
@@ -69,6 +69,7 @@ public class INIT {
     public static final RegistryObject<Block> KILLERPLAYZ_BLOCK = BLOCKS.register("killerplayz_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> HOLY_CAULDRON = BLOCKS.register("holy_cauldron", HolyCauldronBlock::new);
     public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
+    public static final RegistryObject<Block> FEDDYWAP_BLOCK = BLOCKS.register("feddywap_block", KillerPlayzBlock::new);
 
 
     //BLOCK ITEM
@@ -84,6 +85,7 @@ public class INIT {
     public static final RegistryObject<Item> KILLERPLAYZ_BLOCK_ITEM = ITEMS.register("killerplayz_block", () -> new BlockItemBase(KILLERPLAYZ_BLOCK.get()));
     public static final RegistryObject<Item> HOLY_CAULDRON_ITEM = ITEMS.register("holy_cauldron", () -> new BlockItemBase(HOLY_CAULDRON.get()));
     public static final RegistryObject<Item> BLOOD_CAULDRON_ITEM = ITEMS.register("blood_cauldron", () -> new BlockItemBase(BLOOD_CAULDRON.get()));
+    public static final RegistryObject<Item> FEDDYWAP_BLOCK_ITEM = ITEMS.register("feddywap_block", () -> new BlockItemBase(FEDDYWAP_BLOCK.get()));
 
 
     //TOOLS
