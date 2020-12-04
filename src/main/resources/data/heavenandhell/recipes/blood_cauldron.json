@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "x x",
+    "xkx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "heavenandhell:sinful_ingot"
+    },
+    "k":
+    {
+      "item": "minecraft:cauldron"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:blood_cauldron",
+    "count": 1
+  }
+}
