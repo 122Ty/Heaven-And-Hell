@@ -52,8 +52,6 @@
   "item.heavenandhell.jagged_stick": "Jagged Stick",
   "block.heavenandhell.holy_cauldron": "Holy Cauldron",
   "block.heavenandhell.blood_cauldron": "Blood Cauldron",
-  "item.heavenandhell.holy_water_bucket": "Bucket of Holy Water",
-  "block.heavenandhell.niggerite": "Niggerite",
-  "item.heavenandhell.martin_luther": "Head of Martin Luther King Jr.",
-  "block.heavenandhell.feddywap_block": "FeddyWap Block"
+  "item.heavenandhell.holy_water_bucket": "Bucket of Holy Water"
+
 }

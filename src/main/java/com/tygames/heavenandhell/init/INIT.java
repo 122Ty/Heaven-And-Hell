@@ -52,7 +52,6 @@ public class INIT {
     public static final RegistryObject<BucketItem> BLOOD_BUCKET = ITEMS.register("blood_bucket", () -> new BucketItem(INIT.BLOOD_FLUID, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
     public static final RegistryObject<BucketItem> HOLY_WATER_BUCKET = ITEMS.register("holy_water_bucket", () -> new BucketItem(INIT.HOLY_WATER, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
     public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
-    public static final RegistryObject<Item> MARTIN_LUTHER = ITEMS.register("martin_luther", ItemCreativeTab::new);
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
 
     //BLOCKS
@@ -72,7 +71,6 @@ public class INIT {
     public static final RegistryObject<Block> KILLERPLAYZ_BLOCK = BLOCKS.register("killerplayz_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> HOLY_CAULDRON = BLOCKS.register("holy_cauldron", HolyCauldronBlock::new);
     public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
-    public static final RegistryObject<Block> NIGGERITE = BLOCKS.register("niggerite", NiggeriteOre::new);
     public static final RegistryObject<Block> FEDDYWAP_BLOCK = BLOCKS.register("feddywap_block", KillerPlayzBlock::new);
 
 
@@ -90,7 +88,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_CAULDRON_ITEM = ITEMS.register("holy_cauldron", () -> new BlockItemBase(HOLY_CAULDRON.get()));
     public static final RegistryObject<Item> BLOOD_CAULDRON_ITEM = ITEMS.register("blood_cauldron", () -> new BlockItemBase(BLOOD_CAULDRON.get()));
     public static final RegistryObject<Item> FEDDYWAP_BLOCK_ITEM = ITEMS.register("feddywap_block", () -> new BlockItemBase(FEDDYWAP_BLOCK.get()));
-    public static final RegistryObject<Item> NIGGERITE_ITEM = ITEMS.register("niggerite", () -> new BlockItemBase(NIGGERITE.get()));
+
 
 
     //TOOLS
