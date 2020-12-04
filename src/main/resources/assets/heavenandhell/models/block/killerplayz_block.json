@@ -1,9 +1,12 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "block/orientable",
   "textures": {
-    "top": "heavenandhell:blocks/killerplayz_block_top",
-    "front": "heavenandhell:blocks/killerplayz_block_side",
-    "bottom": "heavenandhell:blocks/killerplayz_block_top",
-    "side": "heavenandhell:blocks/killerplayz_block_side"
+    "particle": "heavenandhell:blocks/killerplayz_block_front",
+    "up": "heavenandhell:blocks/killerplayz_block_bottom",
+    "down": "heavenandhell:blocks/killerplayz_block_bottom",
+    "south": "heavenandhell:blocks/killerplayz_block_back",
+    "north": "heavenandhell:blocks/killerplayz_block_front",
+    "west": "heavenandhell:blocks/killerplayz_block_right_side",
+    "east": "heavenandhell:blocks/killerplayz_block_left_side"
   }
 }
