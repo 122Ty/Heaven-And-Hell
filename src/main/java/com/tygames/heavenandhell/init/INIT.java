@@ -64,8 +64,10 @@ public class INIT {
     public static final RegistryObject<Block> CROSS = BLOCKS.register("cross", Cross::new);
     public static final RegistryObject<Block> HEAVENLY_CLOUD = BLOCKS.register("heavenly_cloud", HeavenlyCloud::new);
     public static final RegistryObject<Block> HELL_DIRT = BLOCKS.register("hell_dirt", HellDirt::new);
-    public static final RegistryObject<FlowingFluidBlock> BLOOD_FLUID_BLOCK = BLOCKS.register("blood_fluid_block", () -> new FlowingFluidBlock(INIT.BLOOD_FLUID, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
-    public static final RegistryObject<FlowingFluidBlock> HOLY_WATER_BLOCK = BLOCKS.register("holy_water_block", () -> new FlowingFluidBlock(INIT.HOLY_WATER, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
+    public static final RegistryObject<FlowingFluidBlock> BLOOD_FLUID_BLOCK = BLOCKS.register("blood_fluid_block", () ->
+            new FlowingFluidBlock(INIT.BLOOD_FLUID, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
+    public static final RegistryObject<FlowingFluidBlock> HOLY_WATER_BLOCK = BLOCKS.register("holy_water_block", () ->
+            new FlowingFluidBlock(INIT.HOLY_WATER, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).doesNotBlockMovement().noDrops()));
     public static final RegistryObject<Block> KILLERPLAYZ_BLOCK = BLOCKS.register("killerplayz_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> HOLY_CAULDRON = BLOCKS.register("holy_cauldron", HolyCauldronBlock::new);
     public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
@@ -148,9 +150,13 @@ public class INIT {
             new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
 
     //FLUID
-    public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", () -> new ForgeFlowingFluid.Source(FluidProperties.BLOOD_FLUID_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> BLOOD_FLUID_FLOWING = FLUIDS.register("blood_fluid_flowing", () -> new ForgeFlowingFluid.Flowing(FluidProperties.BLOOD_FLUID_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> HOLY_WATER = FLUIDS.register("holy_water", () -> new ForgeFlowingFluid.Source(FluidProperties.HOLY_WATER_PROPERTIES));
-    public static final RegistryObject<FlowingFluid> HOLY_WATER_FLOWING = FLUIDS.register("holy_water_flowing", () -> new ForgeFlowingFluid.Flowing(FluidProperties.HOLY_WATER_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", () ->
+            new ForgeFlowingFluid.Source(FluidProperties.BLOOD_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> BLOOD_FLUID_FLOWING = FLUIDS.register("blood_fluid_flowing", () ->
+            new ForgeFlowingFluid.Flowing(FluidProperties.BLOOD_FLUID_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HOLY_WATER = FLUIDS.register("holy_water", () ->
+            new ForgeFlowingFluid.Source(FluidProperties.HOLY_WATER_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> HOLY_WATER_FLOWING = FLUIDS.register("holy_water_flowing", () ->
+            new ForgeFlowingFluid.Flowing(FluidProperties.HOLY_WATER_PROPERTIES));
 }
 
