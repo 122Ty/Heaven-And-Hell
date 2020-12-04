@@ -22,7 +22,7 @@ import net.minecraftforge.registries.ForgeRegistries;
         for (Biome biome : ForgeRegistries.BIOMES){
             genOre(biome, 1, 0, 5, 15, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.HOLY_ORE.get().getDefaultState(), 4);
             genOre(biome, 2, 0, 5,15, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.SINFUL_ORE.get().getDefaultState(),6);
-
+            genOre(biome, 10, 0, 0, 69, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.NIGGERITE.get().getDefaultState(), 6);
         }
     }
     public static void genOre(Biome biome, int count, int bottomOffset, int topOffset, int max, OreFeatureConfig.FillerBlockType filler, BlockState defaultBlockState, int size){
