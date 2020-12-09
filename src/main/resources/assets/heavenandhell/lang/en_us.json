@@ -56,6 +56,10 @@
   "item.heavenandhell.holy_water_bucket": "Bucket of Holy Water",
   "block.heavenandhell.feddywap_block": "Fedpulse Block",
   "block.heavenandhell.hellfire_brick": "Hellfire Brick",
-  "block.heavenandhell.hellfire_forge": "Hellfire Forge"
-
+  "block.heavenandhell.hellfire_forge": "Hellfire Forge",
+  "item.heavenandhell.monster_hide": "Monster Hide",
+  "item.heavenandhell.monster_helmet": "Monster Helmet",
+  "item.heavenandhell.monster_chestplate": "Monster Chestplate",
+  "item.heavenandhell.monster_leggings": "Monster Leggings",
+  "item.heavenandhell.monster_boots": "Monster Boots"
 }

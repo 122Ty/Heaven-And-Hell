@@ -61,7 +61,7 @@ public class HeavenandHell
     public static final ItemGroup TAB = new ItemGroup("heavenTab") {
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(INIT.HOLY_BIBLE.get());
+        return new ItemStack(INIT.HEAVEN_AND_HELL_GUIDE.get());
     }
 };
     @SubscribeEvent

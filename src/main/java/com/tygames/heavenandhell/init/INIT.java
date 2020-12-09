@@ -53,6 +53,7 @@ public class INIT {
     public static final RegistryObject<BucketItem> HOLY_WATER_BUCKET = ITEMS.register("holy_water_bucket", () -> new BucketItem(INIT.HOLY_WATER, new Item.Properties().group(HeavenandHell.TAB).maxStackSize(1)));
     public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
+    public static final RegistryObject<Item> MONSTER_HIDE = ITEMS.register("monster_hide", ItemCreativeTab::new);
 
     //BLOCKS
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);
@@ -152,6 +153,14 @@ public class INIT {
             new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<ArmorItem> DEMONIC_BOOTS = ITEMS.register("demonic_boots", () ->
             new ArmorItem(ArmorTier.DEMONIC, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> MONSTER_HELMET = ITEMS.register("monster_helmet", () ->
+            new ArmorItem(ArmorTier.MONSTER, EquipmentSlotType.HEAD, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> MONSTER_CHESTPLATE = ITEMS.register("monster_chestplate", () ->
+            new ArmorItem(ArmorTier.MONSTER, EquipmentSlotType.CHEST, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> MONSTER_LEGGINGS = ITEMS.register("monster_leggings", () ->
+            new ArmorItem(ArmorTier.MONSTER, EquipmentSlotType.LEGS, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<ArmorItem> MONSTER_BOOTS = ITEMS.register("monster_boots", () ->
+            new ArmorItem(ArmorTier.MONSTER, EquipmentSlotType.FEET, new Item.Properties().group(HeavenandHell.TAB)));
 
     //FLUID
     public static final RegistryObject<FlowingFluid> BLOOD_FLUID = FLUIDS.register("blood_fluid", () ->

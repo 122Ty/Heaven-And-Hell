@@ -17,7 +17,8 @@ public enum ArmorTier implements IArmorMaterial {
     HOLY(HeavenandHell.MOD_ID + ":holy", 10, new int[] {4,9,7,4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.HOLY_INGOT.get()); }),
     SINFUL(HeavenandHell.MOD_ID + ":sinful", 10, new int[] {4,9,7,4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.SINFUL_INGOT.get()); }),
     ANGELIC(HeavenandHell.MOD_ID + ":angelic", 10, new int[] {5, 10 ,8, 5}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.ANGELIC_GRACE.get()); }),
-    DEMONIC(HeavenandHell.MOD_ID + ":demonic", 10, new int[] {5, 10 ,8, 5}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.DEMONIC_SOUL.get()); });
+    DEMONIC(HeavenandHell.MOD_ID + ":demonic", 10, new int[] {5, 10 ,8, 5}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.DEMONIC_SOUL.get()); }),
+    MONSTER(HeavenandHell.MOD_ID + ":monster", 10, new int[] {4,9,7,4}, 12, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 4.0f, () -> {return Ingredient.fromItems(INIT.MONSTER_HIDE.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[] {11, 16, 15, 13};
     private final String name;
