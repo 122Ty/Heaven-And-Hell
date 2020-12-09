@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "kyk",
+    "yxy",
+    "kyk"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stone"
+    },
+    "y":
+    {
+      "item": "heavenandhell:sinful_ingot"
+    },
+    "k":
+    {
+      "item": "heavenandhell:sinful_dust"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:hellfire_brick",
+    "count": 1
+  }
+}

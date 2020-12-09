@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "yyy",
+    "yxy",
+    "yyy"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stone"
+    },
+    "y":
+    {
+      "item": "heavenandhell:sinful_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:hellfire_forge",
+    "count": 1
+  }
+}

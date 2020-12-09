@@ -38,18 +38,21 @@ public class BloodCauldronBlock extends CauldronBlock {
 
                     player.addStat(Stats.FILL_CAULDRON);
                     this.setWaterLevel(worldIn, pos, state, 3);
-                    worldIn.playSound((PlayerEntity)null, pos, SoundEvents.ITEM_BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0F, 1.0F);
+                    worldIn.playSound((PlayerEntity) null, pos, SoundEvents.ITEM_BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0F, 1.0F);
                 }
 
                 return ActionResultType.SUCCESS;
+
             } else if (item == Items.BUCKET) {
                 if (i == 3 && !worldIn.isRemote) {
                     if (!player.abilities.isCreativeMode) {
                         itemstack.shrink(1);
                         if (itemstack.isEmpty()) {
                             player.setHeldItem(handIn, new ItemStack(INIT.BLOOD_BUCKET.get()));
+
                         } else if (!player.inventory.addItemStackToInventory(new ItemStack(INIT.BLOOD_BUCKET.get()))) {
                             player.dropItem(new ItemStack(INIT.BLOOD_BUCKET.get()), false);
+
                         }
                     }
                     player.addStat(Stats.USE_CAULDRON);

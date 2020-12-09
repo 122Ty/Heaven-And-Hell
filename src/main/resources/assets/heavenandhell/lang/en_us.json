@@ -1,6 +1,7 @@
 {
   "itemGroup.heavenTab": "Heaven And Hell",
   "item.heavenandhell.holy_bible": "Holy Bible",
+  "item.heavenandhell.heaven_and_hell_guide": "Heaven and Hell Guidebook",
   "item.heavenandhell.holy_water": "Holy Water",
   "item.heavenandhell.belt_of_truth": "Belt of Truth",
   "item.heavenandhell.breastplate_of_righteousness": "Breastplate of Righteousness",
@@ -53,6 +54,8 @@
   "block.heavenandhell.holy_cauldron": "Holy Cauldron",
   "block.heavenandhell.blood_cauldron": "Blood Cauldron",
   "item.heavenandhell.holy_water_bucket": "Bucket of Holy Water",
-  "block.heavenandhell.feddywap_block": "Fedpulse Block"
+  "block.heavenandhell.feddywap_block": "Fedpulse Block",
+  "block.heavenandhell.hellfire_brick": "Hellfire Brick",
+  "block.heavenandhell.hellfire_forge": "Hellfire Forge"
 
 }

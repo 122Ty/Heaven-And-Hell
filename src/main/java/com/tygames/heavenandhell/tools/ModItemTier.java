@@ -15,7 +15,7 @@ public enum ModItemTier implements IItemTier {
         return Ingredient.fromItems(INIT.SWORD_OF_SIN.get());
 
     }),
-    MONSTER(4, 100, 1.0f, 1.0f, 10, () -> {
+    STICK(4, 10, 1.0f, 1.0f, 10, () -> {
         return Ingredient.fromItems(INIT.JAGGED_STICK.get());
     });
 

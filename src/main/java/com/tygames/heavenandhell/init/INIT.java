@@ -72,6 +72,8 @@ public class INIT {
     public static final RegistryObject<Block> HOLY_CAULDRON = BLOCKS.register("holy_cauldron", HolyCauldronBlock::new);
     public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
     public static final RegistryObject<Block> FEDDYWAP_BLOCK = BLOCKS.register("feddywap_block", KillerPlayzBlock::new);
+    public static final RegistryObject<Block> HELLFIRE_BRICK = BLOCKS.register("hellfire_brick", HellfireBrick::new);
+    public static final RegistryObject<Block> HELLFIRE_FORGE = BLOCKS.register("hellfire_forge", HellfireBrick::new);
 
 
     //BLOCK ITEM
@@ -88,7 +90,8 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_CAULDRON_ITEM = ITEMS.register("holy_cauldron", () -> new BlockItemBase(HOLY_CAULDRON.get()));
     public static final RegistryObject<Item> BLOOD_CAULDRON_ITEM = ITEMS.register("blood_cauldron", () -> new BlockItemBase(BLOOD_CAULDRON.get()));
     public static final RegistryObject<Item> FEDDYWAP_BLOCK_ITEM = ITEMS.register("feddywap_block", () -> new BlockItemBase(FEDDYWAP_BLOCK.get()));
-
+    public static final RegistryObject<Item> HELLFIRE_BRICK_ITEM = ITEMS.register("hellfire_brick", () -> new BlockItemBase(HELLFIRE_BRICK.get()));
+    public static final RegistryObject<Item> HELLFIRE_FORGE_ITEM = ITEMS.register("hellfire_forge", () -> new BlockItemBase(HELLFIRE_FORGE.get()));
 
 
     //TOOLS
@@ -113,7 +116,7 @@ public class INIT {
     public static final RegistryObject<HoeItem> HOE_OF_LUST= ITEMS.register("hoe_of_lust", () ->
             new HoeItem(ModItemTier.SINFUL, 0f, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<SwordItem> JAGGED_STICK = ITEMS.register("jagged_stick", () ->
-            new SwordItem(ModItemTier.MONSTER, 1, -2.4f, new Item.Properties().group(HeavenandHell.TAB)));
+            new SwordItem(ModItemTier.STICK, 1, -2.4f, new Item.Properties().group(HeavenandHell.TAB)));
 
 
     //ARMOR
