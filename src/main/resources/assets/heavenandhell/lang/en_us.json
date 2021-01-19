@@ -62,5 +62,9 @@
   "item.heavenandhell.monster_helmet": "Monster Helmet",
   "item.heavenandhell.monster_chestplate": "Monster Chestplate",
   "item.heavenandhell.monster_leggings": "Monster Leggings",
-  "item.heavenandhell.monster_boots": "Monster Boots"
+  "item.heavenandhell.monster_boots": "Monster Boots",
+  "item.heavenandhell.silver_sword": "Silver Sword",
+  "item.heavenandhell.silver_ingot": "Silver Ingot",
+  "block.heavenandhell.silver_ore": "Silver Ore",
+  "block.heavenandhell.kermit_block": "Kermit Block"
 }

@@ -21,7 +21,8 @@ import net.minecraftforge.registries.ForgeRegistries;
     public static void generateOres (FMLLoadCompleteEvent event){
         for (Biome biome : ForgeRegistries.BIOMES){
             genOre(biome, 1, 0, 5, 15, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.HOLY_ORE.get().getDefaultState(), 4);
-            genOre(biome, 2, 0, 5,15, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.SINFUL_ORE.get().getDefaultState(),6);
+            genOre(biome, 40, 0, 5,40, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.SILVER_ORE.get().getDefaultState(),6);
+          genOre(biome, 2, 0, 5,15, OreFeatureConfig.FillerBlockType.NATURAL_STONE, INIT.SINFUL_ORE.get().getDefaultState(),6);
         }
     }
     public static void genOre(Biome biome, int count, int bottomOffset, int topOffset, int max, OreFeatureConfig.FillerBlockType filler, BlockState defaultBlockState, int size){

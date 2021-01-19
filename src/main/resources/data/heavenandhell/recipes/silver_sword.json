@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " d ",
+    " d ",
+    " x "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "d":
+    {
+      "item": "heavenandhell:silver_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:silver_sword",
+    "count": 1
+  }
+}

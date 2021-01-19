@@ -17,6 +17,10 @@ public enum ModItemTier implements IItemTier {
     }),
     STICK(4, 10, 1.0f, 1.0f, 10, () -> {
         return Ingredient.fromItems(INIT.JAGGED_STICK.get());
+    }),
+    SILVER(4, 100, 6.0f, 1.0f, 10, () -> {
+        return Ingredient.fromItems(INIT.SILVER_SWORD.get());
+
     });
 
 

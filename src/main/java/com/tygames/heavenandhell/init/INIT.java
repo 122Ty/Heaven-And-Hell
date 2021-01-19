@@ -54,6 +54,9 @@ public class INIT {
     public static final RegistryObject<Item> ANGEL_WINGS = ITEMS.register("angel_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> MONSTER_HIDE = ITEMS.register("monster_hide", ItemCreativeTab::new);
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", ItemCreativeTab::new);
+
+
 
     //BLOCKS
     public static final RegistryObject<Block> HOLY_BLOCK = BLOCKS.register("holy_block", HolyBlock::new);
@@ -76,6 +79,11 @@ public class INIT {
     public static final RegistryObject<Block> HELLFIRE_BRICK = BLOCKS.register("hellfire_brick", HellfireBrick::new);
     public static final RegistryObject<Block> HELLFIRE_FORGE = BLOCKS.register("hellfire_forge", HellfireForge::new);
     public static final RegistryObject<Block> TYGAMING_BLOCK = BLOCKS.register("tygaming_block", KillerPlayzBlock::new);
+    public static final RegistryObject<Block> KERMIT_BLOCK = BLOCKS.register("kermit_block", KillerPlayzBlock::new);
+    public static final RegistryObject<Block> SILVER_ORE = BLOCKS.register("silver_ore", SilverOre::new);
+
+
+
 
 
 
@@ -96,6 +104,9 @@ public class INIT {
     public static final RegistryObject<Item> HELLFIRE_BRICK_ITEM = ITEMS.register("hellfire_brick", () -> new BlockItemBase(HELLFIRE_BRICK.get()));
     public static final RegistryObject<Item> HELLFIRE_FORGE_ITEM = ITEMS.register("hellfire_forge", () -> new BlockItemBase(HELLFIRE_FORGE.get()));
     public static final RegistryObject<Item> TYGAMING_BLOCK_ITEM = ITEMS.register("tygaming_block", () -> new BlockItemBase(TYGAMING_BLOCK.get()));
+    public static final RegistryObject<Item> KERMIT_BLOCK_ITEM = ITEMS.register("kermit_block", () -> new BlockItemBase(KERMIT_BLOCK.get()));
+    public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItemBase(SILVER_ORE.get()));
+
 
 
     //TOOLS
@@ -121,6 +132,8 @@ public class INIT {
             new HoeItem(ModItemTier.SINFUL, 0f, new Item.Properties().group(HeavenandHell.TAB)));
     public static final RegistryObject<SwordItem> JAGGED_STICK = ITEMS.register("jagged_stick", () ->
             new SwordItem(ModItemTier.STICK, 1, -2.4f, new Item.Properties().group(HeavenandHell.TAB)));
+    public static final RegistryObject<SwordItem> SILVER_SWORD = ITEMS.register("silver_sword", () ->
+            new SwordItem(ModItemTier.SILVER, 4 ,-2.4f, new Item.Properties().group(HeavenandHell.TAB)));
 
 
     //ARMOR
