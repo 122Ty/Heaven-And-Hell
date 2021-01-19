@@ -74,7 +74,9 @@ public class INIT {
     public static final RegistryObject<Block> BLOOD_CAULDRON = BLOCKS.register("blood_cauldron", BloodCauldronBlock::new);
     public static final RegistryObject<Block> FEDDYWAP_BLOCK = BLOCKS.register("feddywap_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> HELLFIRE_BRICK = BLOCKS.register("hellfire_brick", HellfireBrick::new);
-    public static final RegistryObject<Block> HELLFIRE_FORGE = BLOCKS.register("hellfire_forge", HellfireBrick::new);
+    public static final RegistryObject<Block> HELLFIRE_FORGE = BLOCKS.register("hellfire_forge", HellfireForge::new);
+    public static final RegistryObject<Block> TYGAMING_BLOCK = BLOCKS.register("tygaming_block", KillerPlayzBlock::new);
+
 
 
     //BLOCK ITEM
@@ -93,6 +95,7 @@ public class INIT {
     public static final RegistryObject<Item> FEDDYWAP_BLOCK_ITEM = ITEMS.register("feddywap_block", () -> new BlockItemBase(FEDDYWAP_BLOCK.get()));
     public static final RegistryObject<Item> HELLFIRE_BRICK_ITEM = ITEMS.register("hellfire_brick", () -> new BlockItemBase(HELLFIRE_BRICK.get()));
     public static final RegistryObject<Item> HELLFIRE_FORGE_ITEM = ITEMS.register("hellfire_forge", () -> new BlockItemBase(HELLFIRE_FORGE.get()));
+    public static final RegistryObject<Item> TYGAMING_BLOCK_ITEM = ITEMS.register("tygaming_block", () -> new BlockItemBase(TYGAMING_BLOCK.get()));
 
 
     //TOOLS
