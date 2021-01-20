@@ -9,9 +9,11 @@ public class SilverOre extends Block {
 
     public SilverOre() {
         super(Block.Properties.create(Material.IRON)
-                .hardnessAndResistance(15f, 10.0f)
+                .hardnessAndResistance(6f, 10.0f)
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
                 .harvestTool(ToolType.PICKAXE));
+
+
     }
 }

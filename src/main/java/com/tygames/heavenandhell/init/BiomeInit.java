@@ -20,8 +20,8 @@ public class BiomeInit {
     public static final DeferredRegister<Biome> BIOMES = new DeferredRegister<>(ForgeRegistries.BIOMES, HeavenandHell.MOD_ID);
 
     public static  final RegistryObject<Biome> HEAVENLY_PLAINS = BIOMES.register("heaven_biome",
-            () -> new HeveanlyPlains(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f)
-                    .waterColor(1628396).waterFogColor(1636076).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HOLY_BLOCK.get().getDefaultState(),
+            () -> new HeveanlyPlains(new Biome.Builder().precipitation(Biome.RainType.SNOW).scale(1.2f).temperature(0.5f).depth(2)
+                    .waterColor(7006463).waterFogColor(1636076).surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(INIT.HOLY_BLOCK.get().getDefaultState(),
                             INIT.HOLY_DIRT.get().getDefaultState(), INIT.HOLY_BLOCK.get().getDefaultState())).category(Biome.Category.PLAINS).downfall(0.5f).depth(0.125f).parent(null)));
 
 
