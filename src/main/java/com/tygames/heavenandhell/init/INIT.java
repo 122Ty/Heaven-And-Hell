@@ -81,6 +81,7 @@ public class INIT {
     public static final RegistryObject<Block> TYGAMING_BLOCK = BLOCKS.register("tygaming_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> KERMIT_BLOCK = BLOCKS.register("kermit_block", KillerPlayzBlock::new);
     public static final RegistryObject<Block> SILVER_ORE = BLOCKS.register("silver_ore", SilverOre::new);
+    public static final RegistryObject<Block> HOLY_ALTAR = BLOCKS.register("holy_altar", HolyAltar::new);
 
 
 
@@ -106,6 +107,8 @@ public class INIT {
     public static final RegistryObject<Item> TYGAMING_BLOCK_ITEM = ITEMS.register("tygaming_block", () -> new BlockItemBase(TYGAMING_BLOCK.get()));
     public static final RegistryObject<Item> KERMIT_BLOCK_ITEM = ITEMS.register("kermit_block", () -> new BlockItemBase(KERMIT_BLOCK.get()));
     public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItemBase(SILVER_ORE.get()));
+    public static final RegistryObject<Item> HOLY_ALTAR_ITEM = ITEMS.register("holy_altar", () -> new BlockItemBase(HOLY_ALTAR.get()));
+
 
 
 
