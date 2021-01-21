@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "kkk",
+    "yjy",
+    "y y"
+  ],
+  "key":
+  {
+    "j":
+    {
+      "item": "heavenandhell:cross"
+    },
+    "k":
+    {
+      "item": "heavenandhell:holy_ingot"
+    },
+    "y":
+    {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result":
+  {
+    "item": "heavenandhell:holy_altar",
+    "count": 1
+  }
+}
