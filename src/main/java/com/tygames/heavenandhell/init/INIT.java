@@ -7,6 +7,7 @@ import com.tygames.heavenandhell.entities.Vampire;
 import com.tygames.heavenandhell.fluid.FluidProperties;
 import com.tygames.heavenandhell.item.ItemCreativeTab;
 import com.tygames.heavenandhell.item.ModSpawnEggItem;
+import com.tygames.heavenandhell.item.RevolverBow;
 import com.tygames.heavenandhell.tools.ModItemTier;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -55,6 +56,15 @@ public class INIT {
     public static final RegistryObject<Item> TATTERED_WINGS = ITEMS.register("tattered_wings", ItemCreativeTab::new);
     public static final RegistryObject<Item> MONSTER_HIDE = ITEMS.register("monster_hide", ItemCreativeTab::new);
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> RED_INGOT = ITEMS.register("red_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> ORANGE_INGOT = ITEMS.register("orange_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> YELLOW_INGOT = ITEMS.register("yellow_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> GREEN_INGOT = ITEMS.register("green_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> BLUE_INGOT = ITEMS.register("blue_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> PURPLE_INGOT = ITEMS.register("purple_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> PURE_IRON_INGOT = ITEMS.register("pure_iron_ingot", ItemCreativeTab::new);
+    public static final RegistryObject<Item> REVOLVER = ITEMS.register("revolver", () -> new RevolverBow(new Item.Properties().group(HeavenandHell.TAB).maxDamage(500)));
+
 
 
 
@@ -65,6 +75,7 @@ public class INIT {
     public static final RegistryObject<Block> FLESH_BLOCK = BLOCKS.register("flesh_block", () -> new Block(Block.Properties.from(Blocks.SPONGE)));
     public static final RegistryObject<Block> HOLY_ORE = BLOCKS.register("holy_ore", HolyOre::new);
     public static final RegistryObject<Block> SINFUL_ORE = BLOCKS.register("sinful_ore",SinfulOre::new);
+    public static final RegistryObject<Block> RAINBOW_ORE = BLOCKS.register("rainbow_ore",HolyOre::new);
     public static final RegistryObject<Block> CROSS = BLOCKS.register("cross", Cross::new);
     public static final RegistryObject<Block> HEAVENLY_CLOUD = BLOCKS.register("heavenly_cloud", HeavenlyCloud::new);
     public static final RegistryObject<Block> HELL_DIRT = BLOCKS.register("hell_dirt", HellDirt::new);
@@ -92,6 +103,7 @@ public class INIT {
     public static final RegistryObject<Item> HOLY_BLOCK_ITEM = ITEMS.register("holy_block", () -> new BlockItemBase(HOLY_BLOCK.get()));
     public static final RegistryObject<Item> HOLY_ORE_ITEM = ITEMS.register("holy_ore", () -> new BlockItemBase(HOLY_ORE.get()));
     public static final RegistryObject<Item> SINFUL_ORE_ITEM = ITEMS.register("sinful_ore", () -> new BlockItemBase(SINFUL_ORE.get()));
+    public static final RegistryObject<Item> RAINBOW_ORE_ITEM = ITEMS.register("rainbow_ore", () -> new BlockItemBase(RAINBOW_ORE.get()));
     public static final RegistryObject<Item> HELL_BLOCK_ITEM = ITEMS.register("hell_block", () -> new BlockItemBase(HELL_BLOCK.get()));
     public static final RegistryObject<Item> FLESH_BLOCK_ITEM = ITEMS.register("flesh_block", () -> new BlockItemBase(FLESH_BLOCK.get()));
     public static final RegistryObject<Item> CROSS_ITEM = ITEMS.register("cross", () -> new BlockItemBase(CROSS.get()));
@@ -108,6 +120,7 @@ public class INIT {
     public static final RegistryObject<Item> KERMIT_BLOCK_ITEM = ITEMS.register("kermit_block", () -> new BlockItemBase(KERMIT_BLOCK.get()));
     public static final RegistryObject<Item> SILVER_ORE_ITEM = ITEMS.register("silver_ore", () -> new BlockItemBase(SILVER_ORE.get()));
     public static final RegistryObject<Item> HOLY_ALTAR_ITEM = ITEMS.register("holy_altar", () -> new BlockItemBase(HOLY_ALTAR.get()));
+
 
 
 

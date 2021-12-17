@@ -1,0 +1,11 @@
+{
+  "item.gunshot": {
+    "category": "item",
+    "subtitle": "item.gunshot.sub",
+    "sounds":
+    {
+      "name": "heavenandhell.item/gunshot",
+      "stream": true
+    }
+  }
+}

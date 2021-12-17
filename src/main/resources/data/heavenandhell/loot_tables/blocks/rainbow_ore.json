@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:red_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:orange_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:yellow_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:green_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:blue_ingot"
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "heavenandhell:purple_ingot"
+        }
+      ]
+    }
+  ]
+}

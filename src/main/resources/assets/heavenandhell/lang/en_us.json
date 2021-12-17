@@ -18,10 +18,10 @@
   "item.heavenandhell.pickaxe_of_the_spirit": "Pickaxe of the Spirit",
   "item.heavenandhell.axe_of_the_spirit": "Axe of the Spirit",
   "item.heavenandhell.shovel_of_the_spirit": "Shovel of the Spirit",
-  "item.heavenandhell.sinful_helmet": "Satan's Helm",
-  "item.heavenandhell.sinful_chestplate": "Satan's Breastplate",
-  "item.heavenandhell.sinful_leggings": "Satan's Leggings",
-  "item.heavenandhell.sinful_boots": "Satan's Boots",
+  "item.heavenandhell.sinful_helmet": "Sinful Helmet",
+  "item.heavenandhell.sinful_chestplate": "Sinful Breastplate",
+  "item.heavenandhell.sinful_leggings": "Sinful Leggings",
+  "item.heavenandhell.sinful_boots": "Sinful Boots",
   "item.heavenandhell.sword_of_sin": "Sword of Sin",
   "item.heavenandhell.shield_of_wrath": "Shield of Wrath",
   "item.heavenandhell.shovel_of_pride": "Shovel of Pride",
@@ -67,6 +67,15 @@
   "item.heavenandhell.silver_ingot": "Silver Ingot",
   "block.heavenandhell.silver_ore": "Silver Ore",
   "block.heavenandhell.kermit_block": "Kermit Block",
-  "block.heavenandhell.holy_altar": "Holy Altar"
-
+  "block.heavenandhell.holy_altar": "Holy Altar",
+  "block.heavenandhell.rainbow_ore": "Rainbow Ore",
+  "item.heavenandhell.red_ingot": "Red Ingot",
+  "item.heavenandhell.orange_ingot": "Orange Ingot",
+  "item.heavenandhell.yellow_ingot": "Yellow Ingot",
+  "item.heavenandhell.green_ingot": "Green Ingot",
+  "item.heavenandhell.blue_ingot": "Blue Ingot",
+  "item.heavenandhell.purple_ingot": "Purple Ingot",
+  "item.heavenandhell.pure_iron_ingot": "Pure Iron Ingot",
+  "item.gunshot": "Gunshot",
+  "item.gunshot.sub": "Gunshot!"
 }
