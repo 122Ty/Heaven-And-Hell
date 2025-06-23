@@ -64,6 +64,7 @@ public class INIT {
     public static final RegistryObject<Item> PURPLE_INGOT = ITEMS.register("purple_ingot", ItemCreativeTab::new);
     public static final RegistryObject<Item> PURE_IRON_INGOT = ITEMS.register("pure_iron_ingot", ItemCreativeTab::new);
     public static final RegistryObject<Item> REVOLVER = ITEMS.register("revolver", () -> new RevolverBow(new Item.Properties().group(HeavenandHell.TAB).maxDamage(500)));
+    public static final RegistryObject<Item> ANGEL_BLADE = ITEMS.register("angel_blade", ItemCreativeTab::new);
 
 
 
